@@ -3,7 +3,7 @@ require 'rspec/autorun'
 
 describe 'Dog Hash' do
   it 'returns the color of the dog' do
-    expect(DOG[:cattle_dog][:preferences].first[:name].first[:color]).to eq(:brown)
+    dog_attributes = (DOG[:cattle_dog][:preferences])
+    expect(dog_attributes.values).to eq(['Harleigh', 'brown'])
   end
 end
-
