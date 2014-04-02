@@ -1,4 +1,5 @@
-require './dog'
+require 'rspec'
+require 'rspec/autorun'
 
 describe 'Dog Hash' do
   it "returns Harleigh's favorite toy" do
